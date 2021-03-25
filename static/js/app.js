@@ -37,20 +37,30 @@ const filterTable = () => {
   let inputElement = d3.select("#datetime"),
   inputValue = inputElement.property("value");
 
-  console.log(inputValue);
+  //console.log(inputValue);
+  
+  // Purge the existing table for filtered data
+  //tableData.forEach((encounter) => {
+  //  let removeRow = tbody("tr");
+  //  removeRow.remove();
+  //})
   
   let filteredData = tableData.filter(encounter => encounter.datetime === inputValue);
 
  //console.log(filteredData);
 
   // Use D3 to select the table body
-  let tbody = d3.select("tbody");
-
+  //tbody = d3.selectAll("tr").remove();
+  //let tbody = d3.select("tbody");
+  
   // Use D3 to select the table
   let table = d3.select("ufo-table");
+  
+  // Purge the existing rows to be replaced by filtered data
+  currentRows = d3.selectAll("tr").remove()
 
   // Use D3 to set the table class to `table table-striped`
-  table.attr("class", "table table-striped");
+  //table.attr("class", "table table-striped");
 
   // Iterate through each ufo encounter in list
   filteredData.forEach((encounter) => {
