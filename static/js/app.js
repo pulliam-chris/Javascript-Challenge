@@ -1,6 +1,6 @@
 // from data.js
 var tableData = data,
-    button = d3.select("#datetime"),
+    button = d3.select("#filter-btn"),
     form = d3.select("#filter list-group-item");
 
 // console.log(tableData);
