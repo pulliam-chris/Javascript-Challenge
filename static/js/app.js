@@ -57,7 +57,8 @@ const filterTable = () => {
   let table = d3.select("ufo-table");
   
   // Purge the existing rows to be replaced by filtered data
-  currentRows = d3.selectAll("tr").remove()
+  currentRows = d3.select("tbody").selectAll("tr").remove();
+  //currentRows = tbody.remove("tr");
 
   // Use D3 to set the table class to `table table-striped`
   //table.attr("class", "table table-striped");
