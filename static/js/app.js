@@ -30,15 +30,13 @@ const filterTable = () => {
   // Prevent the page from refreshing
   d3.event.preventDefault();
 
-  // Select the input element and get the raw HTML node
   // Get the value property of the input element
   let inputElement = d3.select("#datetime");
   inputValue = inputElement.property("value");
 
   let inputCity = d3.select("#city");
   cityValue = inputCity.property("value");
-  //console.log(cityValue);
-
+  
   let inputState = d3.select("#state");
   stateValue = inputState.property("value");
 
@@ -73,17 +71,11 @@ const filterTable = () => {
   }
   
   // Use D3 to select the table
-  // let table = 
   d3.select("ufo-table");
   
   // Purge the existing rows to be replaced by filtered data
-  // let currentRows = 
   d3.select("tbody").selectAll("tr").remove();
-  //list.html("");
-
-  // Use D3 to set the table class to `table table-striped`
-  //table.attr("class", "table table-striped");
-
+  
   // Iterate through each ufo encounter in list
   filteredData.forEach((encounter) => {
   
