@@ -6,8 +6,8 @@ This project is enabled for **GitHub Pages** and the results can be reviewed at 
 https://pulliam-chris.github.io/Javascript-Challenge/
 
 Primary files:
-* app.js - Script that builds a HTML table out of the provided data and dynamically filters the results based on user input.
-* data.js - Subset of UFO Encounter data packaged in key-value pairs.
+* static\js\app.js - Script that builds a HTML table out of the provided data and dynamically filters the results based on user input.
+* static\js\data.js - Subset of UFO Encounter data packaged in key-value pairs.
 * index.html - Provided homepage programmed using Bootstrap and linked to the Javascript files above.
 
 ### Notes
